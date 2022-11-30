@@ -82,6 +82,7 @@ loe2=1
     loe1=loe1+1"""
    
 
+
 def Test1():
     if NimedKontroll()== True or VanusKontroll()==True:
         return "Test 1 Passed!"
@@ -93,9 +94,17 @@ def Test2():
     else:
         return "Test 2 Failed"
 
+def Test3():
+    
+    if Gruppe==int(round(len(List)/MaxInimesiGrupis,0)):
+        return "Test 3 Passed!"
+    else:
+        return "Test 3 Failed" 
 
 print(Test1())
 print(Test2())
+print(Test3())
+
 
 
 
